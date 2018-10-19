@@ -1,5 +1,5 @@
-const validateHTML = require('html-validator');
-const validateCSS = require('css-validator');
+// const validateHTML = require('html-validator');
+// const validateCSS = require('css-validator');
 const {readFileSync} = require('fs');
 
 module.exports = (exerciseName, read = false, taskExt = 'js') => {
