@@ -63,7 +63,9 @@ describe('Ex4. JS Objects Part 2', () => {
                 code('abbac');
                 expect(console.log.calls.count()).toBe(3);
             });
+
         });
+
     });
 
     describe('Numbers', () => {
