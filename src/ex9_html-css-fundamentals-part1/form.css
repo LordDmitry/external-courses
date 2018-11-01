@@ -46,9 +46,15 @@ form {
 
 .error {
     display: flex;
+    visibility: hidden;
+    width: 20%;
     justify-content: flex-start;
     align-items: center;
 }
+input:invalid + .error{
+    visibility: visible;
+}
+
 .triangle {
     width: 0px;
     height: 0px;
@@ -70,8 +76,14 @@ h1 {
 
 textarea {
     height: 100%;
-    width: 200px;
+    width: 40%;
+    margin-left: 5px;
 }
 input {
-    width: 200px;
+    width: 40%;
+    margin-left: 5px; 
+}
+label {
+    width: 20%;
+    margin-right: 5px;
 }
