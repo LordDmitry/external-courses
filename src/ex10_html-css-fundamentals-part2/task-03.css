@@ -10,6 +10,7 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     width: calc(100% - 20px);
     background: white;
     margin:  0;
@@ -34,6 +35,8 @@ header {
 .logo {
     display: block;
     background: white;
+    background-image: url("images/logo-small.png") no-repeat;
+    background-size: 100% 100%;
 }
 .header-item-wrapper {
     display: flex;
@@ -137,4 +140,10 @@ article {
 .article-text {
     font-weight: 300;
     color: #BCBCBC;
+}
+
+@media only screen and (min-width: 800px){
+    .tablet-menu{
+        display: none;
+    }
 }
