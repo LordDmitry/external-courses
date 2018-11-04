@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    width: calc(100% - 20px);
+    background: white;
+    margin:  0;
+    padding: 20px;
+    padding-right: 0px; 
+    justify-content: space-between;
+}
+.tablet-menu {
+    display: flex;
+}
+.menu-img {
+    display: block;
+    width: 60px;
+    width: 60px;
+    background: white;
+    font-size: 2em;
+}
+.menu-img:hover {
+    filter: brightness(90%);
+}
+
+.logo {
+    display: block;
+    background: white;
+}
+.header-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    margin: 0;
+}
+.search-field {
+    width: 80%; 
+    border: none;
+    margin: 0px;
+}
+
+.search-button {
+    width: 20%;
+    border: none;
+    background: white;
+    padding: 0px;
+    margin: 0;
+}
+.search-button:hover {
+    filter: brightness(90%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.big-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+    
+    background-image: url("images/bg-tablet.png");
+    background-size: 100% 100%;
+    font-size: 1.5em;
+    color: #F8FEFC;
+}
+h1 {
+    display: block;
+    position: relative;
+    font-weight: 200;
+    margin: 0;
+    z-index: 3; 
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+.slogan{
+    position: relative;
+    display: block;
+    font-size: 1.25em;
+    line-height: 0;
+    z-index: 1;
+}
+.big-and {
+    color: #BBECFB;
+    font-weight: bolder;
+    font-size: 3em;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+article {
+    display: flex;
+    min-width: 400px;
+    width: 50%;
+    margin: 3px;
+}
+
+.article-image-wrapper{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 15%;
+}
+.article-text-wrapper   {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 75%    
+}
+
+.article-title, .article-text {
+    margin: 5px;
+    font-weight: 300;
+}
+
+.article-title {
+    font-weight: 400;
+    color: #6C6E6D;
+}
+.article-text {
+    font-weight: 300;
+    color: #BCBCBC;
+}
