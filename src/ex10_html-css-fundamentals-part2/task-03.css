@@ -314,6 +314,13 @@ article {
         height: 100%;
         box-sizing: content-box;
     }
+    .link-wrapper:last-child {
+        border-right: none;
+    }
+    
+    .link-wrapper:first-child {
+        border-left: none;
+    }
 
     .link {
         display: block;
@@ -327,6 +334,7 @@ article {
         justify-content: center;
         width: 100%;
     }
+    
     .slide-item {
         display: flex;
         
@@ -336,6 +344,10 @@ article {
         padding: 0;
         background-size: 100% 100%;
         
+    }
+
+    .slide-item:hover {
+        filter: brightness(90%);
     }
     .slide1{
         background-image: url("images/slide-1.jpg");
