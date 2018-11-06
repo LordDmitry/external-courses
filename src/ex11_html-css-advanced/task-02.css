@@ -1,0 +1,72 @@
+.loader {
+    width: 100px;
+    height: 100px;
+    /* background: red; */
+    border: 10px solid gray;
+    border-left: 10px solid blue;
+    border-radius: 50%;
+    animation: loader-anim 2s linear infinite;
+    
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 300px;
+    border: 10px solid #67E;
+    border-radius: 50%;
+    animation: bounce-anim 1s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+}
+
+.shape {
+    width: 50px;
+    height: 50px;
+    left: 300px;
+    border: 10px solid #67E;
+    background: linear-gradient(#67E, #E76);
+    border-radius: 50%;
+    animation: shape-anim 3s linear infinite;
+    background: linear-gradient(270deg, #67E, #E76);
+    background-size: 400% 400%;
+    position: relative;
+    top: 200px;
+    left: 500px;
+}
+
+@keyframes loader-anim{
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+@keyframes bounce-anim{
+    0% {transform: translateX(0px)}
+    50% {transform: translateX(100px)}
+}
+
+@keyframes shape-anim{
+    0% {
+        border: 10px solid #67E;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        background-position-x: 0%;
+    }
+    20%{
+        border-radius: 0;
+    }
+    40% {
+
+        background-position-x: 50%;
+    }
+    60% {
+        transform: scale(2, 2);
+    }
+    80% {
+        
+        transform: rotate(360deg);
+    }
+    100% {
+        background-position-x: 0%;
+    }
+    
+}
