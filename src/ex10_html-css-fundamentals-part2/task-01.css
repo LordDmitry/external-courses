@@ -1,3 +1,14 @@
+* {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main {
     width: 800px;
     padding: 6px;
@@ -19,6 +30,6 @@ main {
     padding-right: 3px;
     text-align: center;
     position: relative;
-    top: -15px;
+    top: -20px;
     background: white;
 }

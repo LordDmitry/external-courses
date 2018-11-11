@@ -2,24 +2,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     background: white;
     padding: 0px;
     margin: 0px;
-    /* flex-wrap: wrap; */
 }
 
 header {
     display: flex;
     flex-wrap: nowrap; 
-    width: 100%;
     background: white;
     margin:  0;
     padding: 20px;
     padding-right: 0px; 
     justify-content: space-between;
-    box-sizing: border-box;
 }
+
 .misc {
     display: none;
 }
@@ -91,7 +88,7 @@ button:hover {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     
 }
 
@@ -102,9 +99,9 @@ main {
     align-items: center;
     
     min-height: 600px;
-    width: 100%;   
+    
     background-image: url("images/bg-tablet.png");
-    background-size: 100% 100%;
+
     font-size: 1.5em;
     color: #F8FEFC;
 }
@@ -136,9 +133,10 @@ h1 {
 section {
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
+
     justify-content: center;
     align-items: center;
-    width: 60%;
     min-width: 400px;
 }
 article {

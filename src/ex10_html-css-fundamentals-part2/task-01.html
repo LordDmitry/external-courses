@@ -7,7 +7,7 @@
 </head>
 <body>
         
-    <form>
+    <form method="GET" target="http://httpbin.org/">
     <main>
         <span class="border-caption">Personal data</span>
         <br>
@@ -27,7 +27,7 @@
         <label> female</label>
         <br>
         <label>Age </label>
-        <input type="number">
+        <input type="number" min="18" max="101">
         <br>
         <label>Country of Residense</label>
         <select>
@@ -48,8 +48,8 @@
         <input type="file">
         <br>
         <hr>
-        <label> Title: </label>
-        <select>
+        <label> Title</label>
+        <select size="8">
             <optgroup label="Technologies">
                 <option>Web Master</option>
                 <option>Database Administrator</option>
@@ -82,7 +82,7 @@
         <input type="tel">
     </div>  
     <label> Password:</label>
-    <input type="password">
+    <input type="password" required>
     <br>
     <input type="submit" value="Отправить">
     <input type="reset" value="Сбросить">
