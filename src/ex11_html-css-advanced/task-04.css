@@ -19,6 +19,13 @@ header {
     grid-column-end: 3;
     background: #2F364A;
 }
+.button-caption-wrapper {
+    font-size: 20px; 
+    font-weight: 900;
+}
+.button-caption {
+    font-size: 1rem; 
+}
 
 
 aside {    
@@ -84,23 +91,24 @@ a {
 .history-item {
     padding: 13px;
     display: flex;
-    justify-content: flex-end;
-    align-content: space-between;
-    text-align: justify;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 .history-message-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+
+.history-caption {
+    text-align: justify;     /* выравнивание текста по ширине */
+}                            /* нужно для красивого представления текста, а не выравнивания элемента */
 
 .text-highlight {
     color: #97B3CE;
 }
+
 .time {
+    align-self: flex-end;
     margin-top: 20px; 
-    display: block;
     font-style: italic;
 }
 .menu-item:hover{

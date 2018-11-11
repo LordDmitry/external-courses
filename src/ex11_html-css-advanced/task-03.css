@@ -1,35 +1,33 @@
 form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 300px;
 }
-.form-block {
-    display: flex;
+
+div {
+    display:flex;
     flex-direction: column;
+    margin: 5px;
 }
 label {
     opacity: 0;
     order: -1;
     color: gray;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: all 0.2s linear;
 }
 
-input:valid + label {
-    
-    animation: show-label 1s  0.5s 1 forwards;
-} 
-input:valid:focus + label {
-    color: black;
+input:focus + label{
+    color: #44F;
 }
 
+input:valid + label{
+    opacity: 1;
+}
 
-@keyframes show-label {
-    0% {
-        opacity: 0;
-        transform: translateY(2px)
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px)
-    }
+input {
+    font-weight: 200;
+    font-size: 1.25rem;
 }

@@ -10,6 +10,8 @@ img {
     mask-image: none;    
 }
 .masked{
+    width: 350px;
+    height: 350px;
     -webkit-clip-path: none;
     clip-path: none; 
     -webkit-mask-image: url(mask.png);
