@@ -1,0 +1,33 @@
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+div {
+    display:flex;
+    flex-direction: column;
+    margin: 5px;
+}
+label {
+    opacity: 0;
+    order: -1;
+    color: gray;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: all 0.2s linear;
+}
+
+input:focus + label{
+    color: #44F;
+}
+
+input:valid + label{
+    opacity: 1;
+}
+
+input {
+    font-weight: 200;
+    font-size: 1.25rem;
+}
