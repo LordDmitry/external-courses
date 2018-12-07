@@ -1,4 +1,5 @@
 'use strict'
+
 function Hangman(word){
     
     
@@ -10,23 +11,23 @@ function Hangman(word){
         this.currentWord = '';
     }
 
-    this.startAgain(word);
 
     this.guess = function (letter){
         if (this.word.includes(letter)){
             this.rigthGuesses.push(letter);
-            if (this.getGuessedString() ){
-                console.log('U WIN!!!!!!!!');
+            if (this.getGuessedString() === this.word){
+                return this.word + ' | You won!' 
             }
         } else {
             this.wrongGuessesLeft --;
             this.wrongGuesses.push(letter);
             if (this.wrongGuessesLeft > 0){
-                console.log('You are wrong. You have ' + this.wrongGuessesLeft + ' wrong guesses left');
+                console.log('wrong letter, errors left ' + this.wrongGuessesLeft + ' | ' + this.wrongGuesses);
             } else {
-                console.log('LoL. U died');
+                console.log('You have lost');
             }
         }
+        return this;
     }
 
     this.getGuessedString = function (){
@@ -42,8 +43,7 @@ function Hangman(word){
                 this.currentWord += '_';
             }
         }
-        console.log(this.currentWord);
-        return this.currentWord === this.word;
+        return this.currentWord;
     }
     this.getErrorsLeft = function (){
         return this.wrongGuessesLeft;
@@ -53,14 +53,15 @@ function Hangman(word){
         return this.wrongGuesses;
     }
 
+    this.getStatus = function (){
+        return this.getGuessedString() + ' | errors left ' + this.getErrorsLeft;
+    }
   
 }
 
 
 var myhangman = new Hangman('dadd')
 
-// console.log(myhangman.getGuessedString())
-myhangman.guess('s')
 
-myhangman.guess('d')
-myhangman.guess('a')
+
+module.exports = myhangman;
