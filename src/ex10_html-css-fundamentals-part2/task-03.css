@@ -222,7 +222,7 @@ article {
     }
     .social-item {
         display: flex;
-        border: none;
+        
         border-right: 1px solid #D2D2D2;
         border-left: 1px solid #D2D2D2;
         justify-content: center;
