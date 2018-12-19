@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", Verdana, Tahoma;
+}
+table {
+    width: 80%;
+    max-width: 800px;
+    padding: 0;
+}
+tr {
+    
+    background: #E1E9F3;
+}
+tr:nth-child(even){
+    background: #F1F6FA;
+}
+.table-row{
+    height: 50px;
+}
+.table-row:hover{
+    filter: brightness(80%)
+}
+
+th, td {
+    width: 25%;
+    text-align: center;
+    border: 1px solid white;
+}
+th {
+    text-transform: uppercase;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
